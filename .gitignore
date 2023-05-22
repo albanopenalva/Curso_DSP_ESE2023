@@ -1,0 +1,7 @@
+# ESP-IDF 
+/**/build
+/**/managed_components
+
+# Jupyter Notebooks
+/**/.ipynb_checkpoints
+
