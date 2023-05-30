@@ -1,0 +1,21 @@
+{
+    "idf.portWin": "COM4",
+    "idf.flashBaudRate": "921600",
+    "idf.flashType": "UART",
+    "idf.adapterTargetName": "esp32",
+    "idf.openOcdConfigs": [
+        "board/esp32-bridge.cfg"
+    ],
+    "files.associations": {
+        "stdint.h": "c",
+        "chord_d.h": "c",
+        "cmath": "c",
+        "cstdlib": "c",
+        "xlocnum": "c",
+        "silbido.h": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "xlocale": "c",
+        "esp_dsp.h": "c"
+    }
+}
