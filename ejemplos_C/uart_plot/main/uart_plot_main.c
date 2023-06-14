@@ -71,7 +71,7 @@ void uartRxTask(void *arg){
     uint8_t data[N_SAMPLES*sizeof(int16_t)];
     ESP_LOGI(TAG, "Start UART Task");
     while (1) {
-        const int rxBytes = uart_read_bytes(UART_NUM_0, data, sizeof(data), 1000);
+        const int rxBytes = uart_read_bytes(UART_NUM_0, data, sizeof(data), portMAX_DELAY);
         if (rxBytes > 0) {
             for(uint16_t i=0; i<N_SAMPLES; i++){
                 signal[i] = TO_MV(((int16_t*)data)[i]);
