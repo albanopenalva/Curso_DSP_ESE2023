@@ -1,0 +1,1 @@
+idf_component_register(SRCS "Classifier.c" "ml_main.c")
